@@ -1,0 +1,20 @@
+#pratice
+grades = []
+grades.append(92)
+grades.append(51)
+grades.append(83)
+grades.append(37)
+grades.append(72)
+print(grades)
+total = grades[0]+grades[1]+grades[2]+grades[3]+grades[4]
+avg = total//len(grades)
+print(f'Average: {avg:.2f}') #First way
+print()
+print('Average: {:.2f}'.format(avg)) #Second way           #All 3 ways get same result
+print()
+print('Average: %.2f'%avg) #Third way
+print()
+del grades[1]
+y = grades.pop(2)
+print('updated list', grades)
+print(f'Updated Average: {sum(grades)/len(grades):.3f}')
